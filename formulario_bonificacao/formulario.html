@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="desinglogin.html"><button>Voltar para o Login</button></a>
+    
     <title>Document</title>
 </head>
 <body>
-    <h1>PREENCHA O FORMULÁRIO</h1>
+
+    
+    <div class="login-container" id="Formulário"> 
+
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-fornecedor">
+    
     <form>
        <h3>Qual o Fornecedor?</h3> 
        <select>
@@ -31,14 +40,25 @@
         <option>19. 2992 - LINDT & SPRUNGLI</option>
         <option>20. 3196 - MMC IND (NUTRATA)</option>
        </select>
+       </form>
+       </div>
+        </nav>
+        </div>
+
+        
+        <nav class="nav">
+            <div class="cod-cliente">
 
        <h3>Qual o cliente?</h3>
        <h> Informe o código interno.</h><br>
        
        <input type="text" cliente="cliente"/>
+            </div>
+        </nav>
        
 
-        
+       <nav class="nav">
+        <div class="nav-supervisor">
         <h3>Qual o Supervisor</h3> 
         <select>
             <option>01. 01 - DIST ATACADO B.O (JB)</option>
@@ -53,15 +73,20 @@
             <option>10. 20 - DIST RD BONIF (KELLY)</option>
 
         </select>
+        </div>
+       </nav>
 
-        
+        <nav class="nav">
+            <div class="nav-vendedor">
             <h3>Qual o vendedor?</h3> 
-            <h>Informe o código interno.</h> <br>
-
-            
+            <h>Informe o código interno.</h> <br>      
             <input type="text" vendedor="vendedor"/>
+            </div>
+        </nav>
 
 
+            <nav class="nav">
+                <div class="tipo-bonificacao">
 <h3>Qual tipo de bonificação?</h3> 
 <input type="checkbox" tipobonificacao="tipobonificacao">
 Ponto Extra <br>
@@ -71,23 +96,45 @@ Troca de produtos ( avaria, vencidos, rebaixa e etc.) <br>
 
 <input type="checkbox" tipobonificacao="tipobonificacao">
 Pagamento ( contrato, frente de loja, espaço cliente e etc.) <br>
+  </div>
+            </nav>
 
 
 
-
-
+<nav class="nav">
+    <div class="produto-acao">
 <h3>Produto da ação</h3>  
 <input type="text" acao="acao"/>
+</div>
+</nav>
 
+<nav class="nav">
+    <div class="valor-bonificacao">
 <h3>Valor da bonificação</h3> 
 Por favor coloque no formato 00.00<br>
 <input type="number" bonificacao="bonificacao"/>
+    </div>
+</nav>
 
+
+<nav class="nav">
+    <div class="data-inicial">
 <h3>Data inicial da ação</h3> 
 <input type="date" datainicio="datainicio"/>
+    </div>
+</nav>
 
+
+
+<nav class="nav">
+    <div class="data-fim">
 <h3>Data final da ação</h3> 
 <input type="date" datafim="datafim"/>
+    </div>
+    </nav>
+
+   <a href="mensagem.html"><button> Enviar Solicitação</button></a> 
+    
 
 
     </form>
