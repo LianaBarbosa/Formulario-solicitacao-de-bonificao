@@ -35,7 +35,9 @@ body{
     z-index: 100;
 }
 .nav-logo {
-    height: auto;
+    display: flex;
+    align-items: space-around;
+    justify-content: left;
     
 
     
